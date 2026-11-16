@@ -1,0 +1,8 @@
+{
+    "git.ignoreLimitWarning": true,
+    "workbench.editorAssociations": {
+        "*.pkl": "default",
+        "*.pickle": "default"
+    },
+    "python.analysis.autoImportCompletions": true
+}

@@ -1,0 +1,79 @@
+|--- past_academic_score <= 61.05
+|   |--- attendance_rate <= 70.55
+|   |   |--- study_hours <= 10.95
+|   |   |   |--- attendance_rate <= 55.45
+|   |   |   |   |--- class: 0
+|   |   |   |--- attendance_rate >  55.45
+|   |   |   |   |--- study_hours <= 8.25
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- study_hours >  8.25
+|   |   |   |   |   |--- class: 0
+|   |   |--- study_hours >  10.95
+|   |   |   |--- study_hours <= 20.70
+|   |   |   |   |--- attendance_rate <= 55.95
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- attendance_rate >  55.95
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- study_hours >  20.70
+|   |   |   |   |--- class: 1
+|   |--- attendance_rate >  70.55
+|   |   |--- study_hours <= 6.70
+|   |   |   |--- attendance_rate <= 87.45
+|   |   |   |   |--- past_academic_score <= 43.55
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- past_academic_score >  43.55
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- attendance_rate >  87.45
+|   |   |   |   |--- past_academic_score <= 54.65
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- past_academic_score >  54.65
+|   |   |   |   |   |--- class: 1
+|   |   |--- study_hours >  6.70
+|   |   |   |--- attendance_rate <= 84.25
+|   |   |   |   |--- past_academic_score <= 53.70
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- past_academic_score >  53.70
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- attendance_rate >  84.25
+|   |   |   |   |--- past_academic_score <= 59.15
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- past_academic_score >  59.15
+|   |   |   |   |   |--- class: 1
+|--- past_academic_score >  61.05
+|   |--- study_hours <= 9.55
+|   |   |--- attendance_rate <= 90.25
+|   |   |   |--- attendance_rate <= 56.75
+|   |   |   |   |--- class: 0
+|   |   |   |--- attendance_rate >  56.75
+|   |   |   |   |--- past_academic_score <= 67.35
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- past_academic_score >  67.35
+|   |   |   |   |   |--- class: 1
+|   |   |--- attendance_rate >  90.25
+|   |   |   |--- study_hours <= 3.65
+|   |   |   |   |--- class: 0
+|   |   |   |--- study_hours >  3.65
+|   |   |   |   |--- attendance_rate <= 96.55
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- attendance_rate >  96.55
+|   |   |   |   |   |--- class: 1
+|   |--- study_hours >  9.55
+|   |   |--- attendance_rate <= 66.35
+|   |   |   |--- past_academic_score <= 67.60
+|   |   |   |   |--- study_hours <= 17.35
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- study_hours >  17.35
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- past_academic_score >  67.60
+|   |   |   |   |--- past_academic_score <= 81.20
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- past_academic_score >  81.20
+|   |   |   |   |   |--- class: 1
+|   |   |--- attendance_rate >  66.35
+|   |   |   |--- study_hours <= 21.55
+|   |   |   |   |--- attendance_rate <= 84.75
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- attendance_rate >  84.75
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- study_hours >  21.55
+|   |   |   |   |--- class: 1

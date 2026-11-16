@@ -1,0 +1,124 @@
+{
+    "best_model": "Random Forest",
+    "features": [
+        "attendance_rate",
+        "study_hours",
+        "past_academic_score"
+    ],
+    "classes": [
+        "Fail",
+        "Pass"
+    ],
+    "class_mapping": {
+        "0": "Fail",
+        "1": "Pass"
+    },
+    "metrics": {
+        "decision_tree": {
+            "model_name": "Decision Tree Classifier",
+            "cv_accuracy_mean": 0.71875,
+            "cv_accuracy_std": 0.03049077729412618,
+            "test_accuracy": 0.74,
+            "test_precision": 0.7542372881355932,
+            "test_recall": 0.7946428571428571,
+            "test_f1": 0.7739130434782608,
+            "test_roc_auc": 0.7904322240259741,
+            "confusion_matrix": [
+                [
+                    118,
+                    58
+                ],
+                [
+                    46,
+                    178
+                ]
+            ],
+            "classification_report": {
+                "Fail": {
+                    "precision": 0.7195121951219512,
+                    "recall": 0.6704545454545454,
+                    "f1-score": 0.6941176470588235,
+                    "support": 176.0
+                },
+                "Pass": {
+                    "precision": 0.7542372881355932,
+                    "recall": 0.7946428571428571,
+                    "f1-score": 0.7739130434782608,
+                    "support": 224.0
+                },
+                "accuracy": 0.74,
+                "macro avg": {
+                    "precision": 0.7368747416287722,
+                    "recall": 0.7325487012987013,
+                    "f1-score": 0.7340153452685422,
+                    "support": 400.0
+                },
+                "weighted avg": {
+                    "precision": 0.7389582472095907,
+                    "recall": 0.74,
+                    "f1-score": 0.7388030690537084,
+                    "support": 400.0
+                }
+            }
+        },
+        "random_forest": {
+            "model_name": "Random Forest Classifier",
+            "cv_accuracy_mean": 0.744375,
+            "cv_accuracy_std": 0.02141480212376478,
+            "test_accuracy": 0.75,
+            "test_precision": 0.756198347107438,
+            "test_recall": 0.8169642857142857,
+            "test_f1": 0.7854077253218884,
+            "test_roc_auc": 0.8154423701298701,
+            "confusion_matrix": [
+                [
+                    117,
+                    59
+                ],
+                [
+                    41,
+                    183
+                ]
+            ],
+            "classification_report": {
+                "Fail": {
+                    "precision": 0.740506329113924,
+                    "recall": 0.6647727272727273,
+                    "f1-score": 0.7005988023952096,
+                    "support": 176.0
+                },
+                "Pass": {
+                    "precision": 0.756198347107438,
+                    "recall": 0.8169642857142857,
+                    "f1-score": 0.7854077253218884,
+                    "support": 224.0
+                },
+                "accuracy": 0.75,
+                "macro avg": {
+                    "precision": 0.748352338110681,
+                    "recall": 0.7408685064935066,
+                    "f1-score": 0.743003263858549,
+                    "support": 400.0
+                },
+                "weighted avg": {
+                    "precision": 0.7492938591902919,
+                    "recall": 0.75,
+                    "f1-score": 0.7480917992341497,
+                    "support": 400.0
+                }
+            }
+        }
+    },
+    "feature_importances": {
+        "random_forest": {
+            "attendance_rate": 0.2786,
+            "study_hours": 0.3227,
+            "past_academic_score": 0.3987
+        },
+        "decision_tree": {
+            "attendance_rate": 0.2055,
+            "study_hours": 0.221,
+            "past_academic_score": 0.5735
+        }
+    }
+}
